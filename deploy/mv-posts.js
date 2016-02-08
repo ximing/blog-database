@@ -1,5 +1,4 @@
 'use strict'
-console.log(module.paths);
 var path = require('path'),
    fs = require('fs'),
    fse = require('fs-extra');
@@ -12,7 +11,9 @@ function walk(path) {
         if (fs.statSync(path + '/' + item).isDirectory()) {
             walk(path + '/' + item);
         } else {
-            fileList.push(path + '/' + item);
+            if(item.endsWith('.md')){
+                fileList.push(path + '/' + item);
+            }
         }
     });
 }

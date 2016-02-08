@@ -1,5 +1,4 @@
 title: JavaScript 中的 Function.prototype.bind
-categories:
 tags:
   - javascript
 categories:
