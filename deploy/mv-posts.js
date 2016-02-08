@@ -21,6 +21,6 @@ walk(path.join(parentPath, 'posts'));
 console.log(fileList);
 fileList.forEach(item=> {
     let filename = path.basename(item);
-    fse.copySync(item, path.join(parentPath, '.bone',filename));
+    fse.copySync(item, path.join(parentPath, '.bone','/source/_posts/',filename));
 });
 
