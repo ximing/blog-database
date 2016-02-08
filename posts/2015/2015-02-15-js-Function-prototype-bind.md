@@ -4,7 +4,7 @@ tags:
   - javascript
 categories:
   - javascript
-date:  2015-02-15 15:39:03
+date:   2015-02-15 15:39:03
 ---
 项目中需要对obj函数this进行更改，首先想到的就是Function.prototype.bind，.bind()创建了一个函数，当这个函数在被调用的时候，它的 this 关键词会被设置成被传入的值（这里指调用bind()时传入的参数）。因此，我们传入想要的上下文，this(其实就是 ｏbj)，到.bind()函数中。然后，当回调函数被执行的时候， this 便指向 myObj 对象。
 
