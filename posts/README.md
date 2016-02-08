@@ -1,2 +1,0 @@
-# blog-database
-blog-database
