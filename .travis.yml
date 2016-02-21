@@ -17,7 +17,7 @@ before_install:
 - ssh-add ~/.ssh/id_rsa_travis_ci
 - cp .travis/ssh_config ~/.ssh/config
 - git config --global user.name "席铭"
-- git config --global user.email "ximing@yeanzhi.cn"
+- git config --global user.email "807754634@qq.com"
 install:
 - npm install hexo-cli -g
 - npm install fs-extra --save
