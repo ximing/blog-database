@@ -9,7 +9,7 @@ date:   2015-02-15 15:39:03
 
 一个简单的实现就是下面的，不出所料使用了apply()方法
 
-```
+```javascript
 Function.prototype.bind = function (scope) {
     var fn = this;
     return function () {
@@ -18,7 +18,7 @@ Function.prototype.bind = function (scope) {
 ```
 不过事情还没完，这个方法有浏览器兼容问题，ie9以上，chrome7以上才能用，后来在mdn里面发现了一个替代方案
 
-```
+```javascript
 if (!Function.prototype.bind) {
     Function.prototype.bind = function (oThis) {
     if (typeof this !== "function") {
