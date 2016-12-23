@@ -10,4 +10,3 @@ hexo generate
 hexo deploy
 rsync -av ./public/ -e 'ssh' --progress  root@114.215.142.175:/usr/local/openresty/nginx/html/blog
 cd ..
-
