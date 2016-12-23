@@ -8,6 +8,6 @@ git clone https://github.com/iissnan/hexo-theme-next themes/next
 npm install
 hexo generate
 hexo deploy
-rsync -av ./public/ -e 'ssh' --progress  root@114.215.142.175:/usr/local/openresty/nginx/conf
+rsync -av ./public/ -e 'ssh' --progress  root@114.215.142.175:/usr/local/openresty/nginx/html/blog
 cd ..
 
