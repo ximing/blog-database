@@ -3,3 +3,8 @@ Host github.com
   StrictHostKeyChecking no
   IdentityFile ~/.ssh/id_rsa_travis_ci
   IdentitiesOnly yes
+Host ximing.ren
+  User root
+  StrictHostKeyChecking no
+  IdentityFile ~/.ssh/id_rsa_travis_ci
+  IdentitiesOnly yes
